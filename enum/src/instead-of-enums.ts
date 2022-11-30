@@ -14,3 +14,5 @@ doThing(AuthMethod.github)
 // doThing(123)
 // doThing("123")
 // doThing(AuthMethod.NotExist)
+
+export {}
