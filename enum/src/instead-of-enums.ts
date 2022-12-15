@@ -16,3 +16,17 @@ doThing(AuthMethod.github)
 // doThing(AuthMethod.NotExist)
 
 export {}
+
+// --
+
+const LOG_LEVEL = {
+  DSEBUG: "debug",
+  WARNING: "warning",
+  EROOR: "error"
+} as const
+
+type LogLevel = keyof typeof LOG_LEVEL
+
+const log = (msg: string, level: LogLevel) => {
+  console.log(`${LOG_LEVEL[level]}: ${msg}`)
+}
