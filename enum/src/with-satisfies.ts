@@ -6,8 +6,9 @@ const AuthMethodTitles = {
   github: "github",
   email: "email",
   google: "google"
-} satisfies {[key in AuthMethod]: string}
+} satisfies { [key in AuthMethod]: string }
 
-type AuthMethodTitle /* string */ = typeof AuthMethodTitles[keyof typeof AuthMethodTitles]
+type AuthMethodTitle /* string */ =
+  typeof AuthMethodTitles[keyof typeof AuthMethodTitles]
 
 export {}
