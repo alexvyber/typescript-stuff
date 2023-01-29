@@ -6,3 +6,6 @@ const some = () => {
 }
 
 void some()
+const more = void some()
+
+console.log("🚀 ~ more", more)
