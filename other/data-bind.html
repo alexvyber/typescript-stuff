@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Two Way Data Bind</title>
+  </head>
+  <body>
+    <input type="text" id="input" />
+    <p id="p"></p>
+    <script>
+      const input = document.getElementById("input")
+      const p = document.getElementById("p")
+
+      const obj = {
+        get msg() {
+          return p.innerText
+        },
+
+        set msg(arg) {
+          p.innerText = arg
+          input.value = arg
+        }
+      }
+
+      input.addEventListener("keyup", ({ target }) => {
+        obj.msg = target.value
+        console.log("🚀 ~ input.addEventListener ~ target.value", target.value)
+      })
+    </script>
+  </body>
+</html>
