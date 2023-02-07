@@ -30,3 +30,10 @@ type Intersected = {
 
 export type Result = Prettify<Intersected>
 //          ^?
+
+export type identity<T> = T
+export type flatten<T> = identity<{
+  [k in keyof T]: T[k]
+}>
+
+export type ResultTwo = flatten<Intersected>
