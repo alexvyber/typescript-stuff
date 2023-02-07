@@ -11,7 +11,7 @@ const sendEmail = (_email: EmailAddress) => {}
 const signUp = (email: string) => {
   if (isEmailAddress(email)) sendEmail(email)
 
-  sendEmail(email)
+  // sendEmail(email)
 
   assertEmailAddress(email)
 
