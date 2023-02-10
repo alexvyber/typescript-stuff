@@ -1,5 +1,3 @@
 {
-    "plugins": [
-        "@babel/plugin-proposal-pipeline-operator"
-    ]
+  "plugins": ["@babel/plugin-proposal-pipeline-operator"]
 }

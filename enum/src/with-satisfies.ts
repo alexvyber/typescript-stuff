@@ -1,6 +1,6 @@
 const authMethods = ["github", "google", "email"] as const
 
-type AuthMethod = typeof authMethods[number]
+type AuthMethod = (typeof authMethods)[number]
 
 const AuthMethodTitles = {
   github: "github",
@@ -9,6 +9,6 @@ const AuthMethodTitles = {
 } satisfies { [key in AuthMethod]: string }
 
 type AuthMethodTitle /* string */ =
-  typeof AuthMethodTitles[keyof typeof AuthMethodTitles]
+  (typeof AuthMethodTitles)[keyof typeof AuthMethodTitles]
 
 export {}

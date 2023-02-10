@@ -1,5 +1,6 @@
 // import "./two.mjs"
 import { shit } from "./two.mjs"
+
 const { random } = Math
 shit("shit")
 

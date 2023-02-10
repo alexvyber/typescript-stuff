@@ -9,7 +9,7 @@ const requiredServerEnvs = [
 declare global {
   namespace NodeJS {
     type ProcessEnvType = {
-      [key in typeof requiredServerEnvs[number]]: string
+      [key in (typeof requiredServerEnvs)[number]]: string
     }
 
     interface ProcessEnv extends ProcessEnvType {}

@@ -4,7 +4,7 @@ const AuthMethod = {
   google: "google"
 } as const
 
-type AuthMethod = typeof AuthMethod[keyof typeof AuthMethod]
+type AuthMethod = (typeof AuthMethod)[keyof typeof AuthMethod]
 
 const doThing = (authMethod: AuthMethod) => {}
 
