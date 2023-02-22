@@ -7,7 +7,7 @@ for (const name of names) {
   console.log("🚀 ~ name", name)
 }
 
-console.log("----------------")
+console.log("-----")
 
 for (const key in names) {
   if (Object.hasOwnProperty.call(names, key)) {
