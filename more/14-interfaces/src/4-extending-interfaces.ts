@@ -1,36 +1,33 @@
-// interface Department {
-//   department: string[];
-// }
+export {}
 
-// interface Employee extends Department {
-//   readonly id: number;
-//   name: string;
-//   hobbies: string[];
-//   employeeHobbies(): string[];
-// }
+interface Department {
+  department: string[]
+}
 
-// function getEmployeeInfo(
-//   id: number,
-//   name: string,
-//   department: string[],
-//   hobbies: string[]
-// ): Employee {
-//   return {
-//     id,
-//     name,
-//     department,
-//     hobbies,
-//     employeeHobbies() {
-//       return employee.hobbies;
-//     },
-//   };
-// }
+interface Employee extends Department {
+  readonly id: number
+  name: string
+  hobbies: string[]
+  employeeHobbies(): string[]
+}
 
-// let employee: Employee = getEmployeeInfo(
-//   1,
-//   "Glenn",
-//   ["Development"],
-//   ["Reading", "Walking"]
-// );
+function getEmployeeInfo(
+  id: number,
+  name: string,
+  department: string[],
+  hobbies: string[],
+): Employee {
+  return {
+    id,
+    name,
+    department,
+    hobbies,
+    employeeHobbies() {
+      return employee.hobbies
+    },
+  }
+}
 
-// console.log(employee);
+let employee: Employee = getEmployeeInfo(1, "Glenn", ["Development"], ["Reading", "Walking"])
+
+console.log(employee)

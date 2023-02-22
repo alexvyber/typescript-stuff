@@ -1,2 +1,2 @@
 // Challenge 7
-// someArr[0][0][3][2]
+someArr[0][0][3][2]

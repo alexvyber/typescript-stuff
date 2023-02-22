@@ -2,11 +2,11 @@
 What will the function invocation result in?
 */
 
-// function multiply(n: number): number {
-//   return n * n;
-// }
-// const result: (n: number) => number = multiply;
-// result(11);
+function multiply(n: number): number {
+  return n * n
+}
+const result: (n: number) => number = multiply
+result(11)
 
 /*  Challenge 2 
 What will the function invocation result in?

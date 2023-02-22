@@ -1,14 +1,13 @@
-// let productName: Function;
+let productName: Function
 
-// productName = (product: string): string => {
-//   return product;
-// };
+productName = (product: string): string => {
+  return product
+}
 
-// ----
-// let productName: (product: string) => string;
+let productName1: (arg: string) => string
 
-// productName = (product) => {
-//   return product;
-// };
+productName = arg => {
+  return arg
+}
 
-// console.log(productName("TS Bootcamp"));
+console.log(productName("TS Bootcamp"))

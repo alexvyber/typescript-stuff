@@ -8,4 +8,5 @@ function isRepoCommitted(repo: GitRepo): boolean {
 }
 
 let gitCommit = isRepoCommitted(GitRepo.Committed)
+
 console.log(gitCommit)

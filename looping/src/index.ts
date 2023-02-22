@@ -28,5 +28,5 @@ for (const [name, age, sex] of tableWithoutHeadres) {
   console.log("🚀 ~ age", age)
   console.log("🚀 ~ sex", sex)
 
-  console.log(" ---------- ")
+  console.log("  ")
 }

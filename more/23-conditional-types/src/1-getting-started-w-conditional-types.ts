@@ -2,7 +2,7 @@
 // const allowedToDrive = age >= 21 ? "Allowed" : "Not Allowed";
 // console.log(allowedToDrive);
 
-// -------
+//
 // type Name = string;
 // type Price = number;
 

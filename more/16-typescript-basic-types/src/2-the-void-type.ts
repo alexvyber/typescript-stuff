@@ -1,15 +1,15 @@
-// function printHello() {
-//   console.log("Hello");
-// }
+function printHello() {
+  console.log("Hello")
+}
 
-// printHello();
+printHello()
 
-// let productCategory: string;
+let productCategory: string
 
-// let shoppingCart = (category: string): void => {
-//   productCategory = category;
-// };
+let shoppingCart = (category: string): void => {
+  productCategory = category
+}
 
-// console.log(shoppingCart("T-Shirt"));
+console.log(shoppingCart("T-Shirt"))
 
-// let movieName: void = undefined;
+let movieName: void = undefined

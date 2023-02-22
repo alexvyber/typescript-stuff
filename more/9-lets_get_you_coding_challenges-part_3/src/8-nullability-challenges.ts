@@ -49,9 +49,9 @@ console.log(vague2);
 /*  Challenge 5 
 Create a function that produces a value based on the following conditions
 
-1--------- If the argument passed is a string containing a number, it should return the number
+1 If the argument passed is a string containing a number, it should return the number
 
-2---------If the argument passed is a string not containing a number, it should return undefined
+2If the argument passed is a string not containing a number, it should return undefined
 
-3---------If the argument passed is undefined, it should return undefined
+3If the argument passed is undefined, it should return undefined
 */

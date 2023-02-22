@@ -1,8 +1,12 @@
-// let productName: (product: string, price?: number) => string;
+export {}
 
-// productName = (product, price = 10.99) => {
-//   return `${product}, ${price}`;
-// };
+let productName: (product: string, price?: number) => string
 
-// console.log(productName("TS Bootcamp"));
-// console.log(productName("TS Bootcamp", 9.99));
+productName = (product = "some", price = 10.99) => {
+  return `${product}, ${price}`
+}
+
+console.log(productName("TS Bootcamp"))
+console.log(productName("TS Bootcamp", 9.99))
+
+productName("123", 123)

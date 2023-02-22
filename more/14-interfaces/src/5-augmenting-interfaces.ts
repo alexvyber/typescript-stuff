@@ -1,56 +1,54 @@
-// interface Product {
-//   name: string;
-//   price: number;
-// }
+export {}
 
-// interface Product {
-//   rating: number;
-//   sales: number;
-// }
+interface Product {
+  name: string
+  price: number
+}
 
-// const course: Product = {
-//   name: "TS",
-//   price: 10.99,
-//   rating: 4.6,
-//   sales: 1111,
-// };
+interface Product {
+  rating: number
+  sales: number
+}
 
-// -----
-// interface Product {
-//   name: string;
-//   price: number;
-// }
+const course: Product = {
+  name: "TS",
+  price: 10.99,
+  rating: 4.6,
+  sales: 1111,
+}
 
-// interface Product {
-//   // price: string
+interface Product {
+  name: string
+  price: number
+}
 
-//   rating: number;
-//   sales: number;
-// }
+interface Product {
+  // price: string
 
-// const course: Product = {
-//   name: "TS",
-//   price: 10.99,
-//   rating: 4.6,
-//   sales: 1111,
-// };
+  rating: number
+  sales: number
+}
 
-//
+const course_: Product = {
+  name: "TS",
+  price: 10.99,
+  rating: 4.6,
+  sales: 1111,
+}
 
-// interface Product {
-//   name: string;
-//   price: number;
-// }
+interface Product {
+  name: string
+  price: number
+}
 
-// const course: Product = {
-//   name: "TS",
-//   price: 10.99,
+const course__: Product = {
+  name: "TS",
+  price: 10.99,
+  rating: 4.6,
+  sales: 1111,
+}
 
-//   rating: 4.6,
-//   sales: 1111,
-// };
-
-// interface Product {
-//   rating: number;
-//   sales: number;
-// }
+interface Product {
+  rating: number
+  sales: number
+}

@@ -1,11 +1,13 @@
 // Challenge 4
 
-// type ProductName = {
-//   name: string;
-// };
+export {}
 
-// interface ProductPrice extends ProductName {
-//   price: number;
-// }
+type ProductName = {
+  name: string
+}
 
-// const product: ProductPrice = { name: " TS Bootcamp", price: 10.99 };
+interface ProductPrice extends ProductName {
+  price: number
+}
+
+const product: ProductPrice = { name: " TS Bootcamp", price: 10.99 }

@@ -7,7 +7,7 @@
 // }
 // console.log(getProductName({ productName: "TS Bootcamp" }));
 
-// --------
+//
 // function getProductName({ productName }: { productName: string }): string {
 //   return productName;
 // }
@@ -24,13 +24,13 @@
 
 // getProductName({ productName: "TS Bootcamp" });
 
-// --------
+//
 // export const course = {
 //   name: "TS",
 //   price: 10.99,
 // };
 
-// --------
+//
 // const course = {
 //   name: "TS",
 //   price: 10.99,
@@ -47,11 +47,11 @@
 
 // export default 1 + 1;
 
-// --------
+//
 // export = "cool";
 
-// --------
+//
 // export const released = false;
 // export const courseName = "TS Bootcamp";
 
-// --------
+//

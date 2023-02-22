@@ -1,24 +1,26 @@
-// type Product = {
-//   name: string;
-//   price: number;
-//   readonly level: string;
-//   released?: boolean;
-//   // released: boolean;
-// };
+export {}
 
-// const product: Product = {
-//   name: "TS",
-//   price: 10.99,
-//   level: "Beginner",
-//   // released: true,
-// };
+type Product = {
+  name: string
+  price: number
+  readonly level: string
+  released?: boolean
+  // released: boolean;
+}
 
-// // product.level = "Intermediate";
-// product.released = true;
-// console.log(product);
+const product: Product = {
+  name: "TS",
+  price: 10.99,
+  level: "Beginner",
+  // released: true,
+}
 
-// let onlineCourse: Product = {
-//   name: "JS",
-//   price: 9.99,
-//   level: "Beginner",
-// };
+// product.level = "Intermediate";
+product.released = true
+console.log(product)
+
+let onlineCourse: Product = {
+  name: "JS",
+  price: 9.99,
+  level: "Beginner",
+}

@@ -8,7 +8,7 @@ let product = {
 let courseName = product.name
 let courseName_ = product["name"]
 
-// ------
+//
 type Product = {
   name: string
   price: number
@@ -18,7 +18,7 @@ type CourseName = Product["name"]
 const courseName__: CourseName = "TS"
 console.log(courseName)
 
-// ------
+//
 type Product1 = {
   name: string
   price: number
@@ -45,7 +45,7 @@ let courseInfo = promoteProduct("TS", 10.99, {
 
 console.log(courseInfo)
 
-// ------
+//
 interface Product2 {
   name: string
   price: number

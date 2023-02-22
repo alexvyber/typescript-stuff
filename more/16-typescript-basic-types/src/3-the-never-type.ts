@@ -1,9 +1,9 @@
-// function chatFeed():never {
-//   while (true) {
-//     // Grab the messages and display them on the screen
-//   }
-// }
+function chatFeed(): never {
+  while (true) {
+    // Grab the messages and display them on the screen
+  }
+}
 
-// chatFeed()
+chatFeed()
 
-// console.log("Chat Disconnected");
+console.log("Chat Disconnected")

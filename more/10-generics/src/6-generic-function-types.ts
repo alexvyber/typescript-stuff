@@ -1,10 +1,18 @@
-// // type FuncType<T> = (elements: T[]) => number;
-// type FuncType<T> = (elements: Array<T>) => number;
+export {}
 
-// let getArrayLength: FuncType<number> = (elements) => {
-//   return elements.length;
-// };
+type FuncType<T> = (elements: T[]) => number
+type FuncTypeTwo<T> = (elements: Array<T>) => number
 
-// let arrLength = getArrayLength([1, 2, 3]);
-// // let arrLength = getArrayLength(["Hi"]);
-// console.log(arrLength);
+let getArrayLength: FuncType<number> = elements => {
+  return elements.length
+}
+
+let getArrayLengthTwo: FuncTypeTwo<string> = elements => {
+  return elements.length
+}
+
+let arrLength = getArrayLength([1, 2, 3])
+console.log("🚀 ~ arrLength:", arrLength)
+
+let arrLength_ = getArrayLengthTwo(["Hi"])
+console.log("🚀 ~ arrLength_:", arrLength_)

@@ -7,8 +7,10 @@ function setCoursePrice(course: Courses) {
   switch (course) {
     case Courses.TS:
       return "$29.99"
+
     case Courses.JS:
       return "$25.99"
+
     default:
       courseWarning(course)
     // throw new Error(`Course ${course} has not been priced.`);

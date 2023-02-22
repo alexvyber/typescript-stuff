@@ -7,7 +7,7 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+    "format": "prettier --write \"*/**/*.ts\""
   },
   "devDependencies": {
     "@theguild/eslint-config": "^0.8.0",

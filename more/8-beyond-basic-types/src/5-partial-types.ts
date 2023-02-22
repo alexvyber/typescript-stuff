@@ -7,7 +7,7 @@ type Product = {
 
 let course: Product = { name: "TS" }
 
-// ----------
+//
 // Mapped Types
 
 type Product1 = {

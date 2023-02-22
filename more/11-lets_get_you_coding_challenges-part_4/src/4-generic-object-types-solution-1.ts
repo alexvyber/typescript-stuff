@@ -1,12 +1,12 @@
 // Challenge 1
-// type AirConditioner<T> = {
-//   winter: T;
-//   summer: T;
-// };
+type AirConditioner<T> = {
+  winter: T
+  summer: T
+}
 
-// const myAC: AirConditioner<string> = {
-//   winter: "Warm",
-//   summer: "Cold",
-// };
+const myAC: AirConditioner<string> = {
+  winter: "Warm",
+  summer: "Cold",
+}
 
-// console.log(myAC);
+console.log(myAC)

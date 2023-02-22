@@ -6,17 +6,17 @@ Create a Product interface with 3 properties, id, name and category and use this
 What will the dog name log?
 */
 
-// type Cat = {
-//   name: string;
-// };
+type Cat = {
+  name: string
+}
 
-// interface Dog {
-//   name: string;
-// }
+interface Dog {
+  name: string
+}
 
-// const cat: Cat = { name: "George" };
-// const dog: Dog = cat;
-// console.log(dog.name);
+const cat: Cat = { name: "George" }
+const dog: Dog = cat
+console.log(dog.name)
 
 /*  Challenge 3 
 Create an interface called ProductName and a second interface called ProductPrice that extends the first interface. Finally create an object from the second interface

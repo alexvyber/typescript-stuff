@@ -7,7 +7,7 @@ let course1: Product1 = {
   price: 10.99,
 }
 
-// -------
+//
 
 type Product2 = {
   // [k: string]: string;
@@ -20,7 +20,7 @@ let course2: Product2 = {
   Python: "Python Bootcamp",
 }
 
-// -------
+//
 
 type Product3 = {
   [isPriced: string]: boolean
@@ -33,7 +33,7 @@ let course3: Product3 = {
   released: false,
 }
 
-// -------
+//
 
 type Product4 = {
   [price: string]: number
@@ -46,7 +46,7 @@ let course4: Product4 = {
   released: false,
 }
 
-// -------
+//
 
 type Product5 = {
   [k: string]: {
