@@ -2,31 +2,31 @@
 What will the console log?
 */
 
-// type SucceededAPICall = {
-//   response: "success";
-//   value: number;
-// };
+export {}
 
-// type FailedAPICall = {
-//   response: "failure";
-//   reason: string;
-// };
+type SucceededAPICall = {
+  response: "success"
+  value: number
+}
 
-// type APICall = SucceededAPICall | FailedAPICall;
+type FailedAPICall = {
+  response: "failure"
+  reason: string
+}
 
-// function APICallStatus(s: string): APICall {
-//   const n: number = Number(s);
-//   if (Number.isNaN(n)) {
-//     return {
-//       response: "failure",
-//       reason: "the string passed cannot be converted into a number",
-//     };
-//   } else {
-//     return { response: "success", value: n };
-//   }
-// }
+type APICall = SucceededAPICall | FailedAPICall
 
-// let apiCallResult = APICallStatus("10");
-// console.log(
-//   apiCallResult.response === "success" ? apiCallResult.value : undefined
-// );
+function APICallStatus(s: string): APICall {
+  const n: number = Number(s)
+  if (Number.isNaN(n)) {
+    return {
+      response: "failure",
+      reason: "the string passed cannot be converted into a number",
+    }
+  } else {
+    return { response: "success", value: n }
+  }
+}
+
+let apiCallResult = APICallStatus("10")
+console.log(apiCallResult.response === "success" ? apiCallResult.value : undefined)

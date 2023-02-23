@@ -21,4 +21,5 @@ type Product1 = {
 const prodcut: Product1 = {
   TS: "TS Bootcamp",
   JS: "JS Bootcamp",
+  SomeRandomShit: "asdfasdfasdfasdfasdfasdf",
 }

@@ -6,6 +6,7 @@ type Course = {
 }
 
 type Product<T> = { [k: string]: T }
+type Mapped<T> = { [k in "one" | "two"]: T }
 
 function getCoursesInfo<T>(course: Product<T>) {
   return course

@@ -1,22 +1,21 @@
-// interface Product {
-//   name: string;
-//   price: number;
-// }
+export interface Product {
+  name: string
+  price: number
+}
 
-// type ReadOnlyTYPE<Type> = {
-//   readonly [Key in keyof Type]: Type[Key]
-// }
+type ReadOnlyTYPE<Type> = {
+  readonly [Key in keyof Type]: Type[Key]
+}
 
-// const product: ReadOnlyTYPE<Product> = {
-//   name: "TS",
-//   price: 10.99,
-// };
+const product: ReadOnlyTYPE<Product> = {
+  name: "TS",
+  price: 10.99,
+}
 
-// const product: Readonly<Product> = {
-//   name: "TS",
-//   price: 10.99,
-// };
+const product1: Readonly<Product> = {
+  name: "TS",
+  price: 10.99,
+}
 
-// product.name = "JS";
-
-// console.log(product);
+product.name = "JS"
+product1.name = "JS"

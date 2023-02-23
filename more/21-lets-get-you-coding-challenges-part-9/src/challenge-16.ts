@@ -2,13 +2,13 @@
 What will the course variable log?
 */
 
-// interface Product {
-//   name: string;
-// }
+export interface Product {
+  name: string
+}
 
-// class TSCourse implements Product {
-//   constructor(public name: number) {}
-// }
+class TSCourse implements Product {
+  constructor(public name: number) {}
+}
 
-// let course = new TSCourse("TS Bootcamp");
-// console.log(course);
+let course = new TSCourse("TS Bootcamp")
+console.log(course)

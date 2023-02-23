@@ -2,18 +2,18 @@
 What will the following function invocation print?
 */
 
-// type Department = {
-//   department: string;
-// };
+type Department = {
+  department: string
+}
 
-// type Product = {
-//   name: string;
-// };
+type Product = {
+  name: string
+}
 
-// type ProductInfo = Department & Product;
+type ProductInfo = Department & Product
 
-// function getProductInfo({ department }: ProductInfo): string {
-//   return department;
-// }
+function getProductInfo({ department }: ProductInfo): string {
+  return department
+}
 
-// console.log(getProductInfo({ department: "Electronics", name: "M8" }));
+console.log(getProductInfo({ department: "Electronics", name: "M8" }))

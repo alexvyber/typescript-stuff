@@ -4,13 +4,17 @@ type Course = {
 }
 
 // Original Mapped Types
-// type Product = { [course in "TS" | "JS"]: Course };
+type Product = { [course in "TS" | "JS"]: Course }
 
 // First Iteration
-// type RecordTYPE<KeyType, ValueType> = { [key in KeyType]: ValueType };
+type RecordOne<KeyType, ValueType> = { [key in KeyType]: ValueType }
+
+type Some = {
+  [key: Exclude<PropertyKey, symbol>]: any
+}
 
 // Second Iteration
-type RecordTYPE<KeyType extends string, ValueType> = {
+type RecordTwo<KeyType extends string, ValueType> = {
   [key in KeyType]: ValueType
 }
 
@@ -26,7 +30,7 @@ let recordKeyType: keyof any
 //   return course;
 // }
 
-function getCoursesInfo<U extends string, T>(course: RecordTYPE<U, T>) {
+function getCoursesInfo<U extends string, T>(course: RecordTwo<U, T>) {
   return course
 }
 

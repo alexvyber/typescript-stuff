@@ -1,38 +1,54 @@
-// import { getProductName, course } from "./TS-modules";
-// import { getProductName as product, course } from "./TS-modules";
-// console.log(product({ productName: "TS Bootcamp" }));
-// console.log(course);
-// import { course } from "./re-export";
-// console.log(course);
-// import { product, productsList } from "./utils";
-// console.log(product);
-// console.log(productsList);
-// import defaultCourse from "./TS-modules";
-// console.log(defaultCourse);
-// import courseObject from "./TS-modules";
-// console.log(courseObject);
-// import defaultStringPython from "./TS-modules";
-// console.log(defaultStringPython);
-// import addOneToOne from "./TS-modules";
-// console.log(addOneToOne);
-// import cool = require("./TS-modules");
-// import { released, courseName } from "./TS-modules";
-// if (released) {
-//   import("./TS-modules").then(() =>
-//     console.log(`The course name is ${courseName}`)
-//   );
-// }
-// import * as config from "./config.json";
-// import { addition } from "./ambient";
-import { addition } from "ambient"
+// import { addition } from "./ambient"
+import { addition as additionOne } from "ambient"
+import { addition as additionTwo } from "ambient"
+import * as config from "./config.json"
+import { courseReExport } from "./re-export"
+import { course, getProductName } from "./ts-modules"
+import { getProductName as retriveProductName, course as someCourse } from "./ts-modules"
+import defaultCourse from "./ts-modules"
+import courseObject from "./ts-modules"
+import defaultStringPython from "./ts-modules"
+import addOneToOne from "./ts-modules"
+import { courseName, released } from "./ts-modules"
+import { product, productsList } from "./utils"
 
-addition(20, 10)
+console.log(course)
+console.log("🚀 ~ someCourse:", someCourse)
+console.log("🚀 ~ courseReExport:", courseReExport)
 
-// import { addition } from "ambient";
-// addition(20, 10);
+console.log(getProductName({ productName: "ts Bootcamp" }))
+console.log(retriveProductName({ productName: "ts Bootcamp" }))
 
-// declare module "ambient" {
-//   export function addition(): string;
-// }
+console.log(product)
+console.log(productsList)
 
-// addition();
+console.log(defaultCourse)
+
+console.log(courseObject)
+
+console.log(defaultStringPython)
+
+console.log(addOneToOne)
+
+const cool = require("./ts-modules")
+console.log("🚀 ~ cool:", cool)
+
+if (released) {
+  import("./ts-modules").then(
+    some => (console.log("🚀 ~ some:", some), console.log(`The course name is ${courseName}`)),
+  )
+}
+
+console.log("🚀 ~ config:", config)
+
+// addition(20, 10)
+
+additionOne(20, 10)
+
+additionTwo(20, 10)
+
+declare module "ambient" {
+  export function addition(): string
+}
+
+// addition()

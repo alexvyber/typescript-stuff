@@ -1,12 +1,13 @@
-// let age = 21;
-// const allowedToDrive = age >= 21 ? "Allowed" : "Not Allowed";
-// console.log(allowedToDrive);
+export {}
 
-//
-// type Name = string;
-// type Price = number;
+const age = 21
+const allowedToDrive = age >= 21 ? "Allowed" : "Not Allowed"
+console.log(allowedToDrive)
 
-// type Product<T> = T extends "ProductName" ? Name : Price;
+type Name = string
+type Price = number
 
-// let productName: Product<"ProductName">;
-// let productPrice: Product<"ProductPrice">
+type Product<T> = T extends "ProductName" ? Name : Price
+
+let productName: Product<"ProductName">
+let productPrice: Product<"ProductPrice">

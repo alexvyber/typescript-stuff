@@ -1,22 +1,23 @@
-// class Robot {
-//   readonly id: number;
-//   readonly model: string;
-//   name: string;
-//   durability?: string;
+export class Robot {
+  readonly id: number
+  readonly model: string
 
-//   constructor(id: number, model: string, name: string) {
-//     this.id = id;
-//     this.model = model;
-//     this.name = name;
-//   }
+  name: string
+  durability?: string
 
-//   walk(): void {
-//     console.log("This robot can walk");
-//   }
-// }
+  constructor(id: number, model: string, name: string) {
+    this.id = id
+    this.model = model
+    this.name = name
+  }
 
-// let robot = new Robot(1051, "EX69", "Avdon");
-// // robot.id = 1050
+  walk(): void {
+    console.log("This robot can walk")
+  }
+}
 
-// console.log(robot);
-// robot.durability = "High";
+let robot = new Robot(1051, "EX69", "Avdon")
+// robot.id = 1050
+
+console.log(robot)
+robot.durability = "High"

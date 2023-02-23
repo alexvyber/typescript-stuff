@@ -1,24 +1,24 @@
 // Global Scope
-// var myName: string = "John";
-// let myName: string = "John";
-// const myName: string = "John";
+var myName: string = "John";
+let myName: string = "John";
+const myName: string = "John";
 
-// function someName() {
-//   console.log(myName);
-// }
+function someName() {
+  console.log(myName);
+}
 
-// someName();
+someName();
 
-// console.log(myName);
+console.log(myName);
 
 // Local Scope
 function myFunc() {
   var num: number = 10
   console.log(num)
 }
-// myFunc();
+myFunc();
 
-// console.log(num);
+console.log(num);
 
 // block Scope
 
@@ -33,5 +33,5 @@ function myFunc() {
 }
 
 console.log("var outside the block", num1)
-// console.log("let outidse the block", num2);
-// console.log("const outside the block", num3);
+console.log("let outidse the block", num2)
+console.log("const outside the block", num3)

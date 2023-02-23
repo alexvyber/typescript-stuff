@@ -2,13 +2,13 @@
 What will the course variable log?
 */
 
-// type Product = {
-//   name: string;
-// };
+export type Product = {
+  name: string
+}
 
-// class TSCourse implements Product {
-//   constructor(public name: string) {}
-// }
+class TSCourse implements Product {
+  constructor(public name: string) {}
+}
 
-// let course = new TSCourse("TS Bootcamp");
-// console.log(course);
+let course = new TSCourse("TS Bootcamp")
+console.log(course)

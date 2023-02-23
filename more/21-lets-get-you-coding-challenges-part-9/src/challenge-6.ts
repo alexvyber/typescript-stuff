@@ -2,17 +2,19 @@
 What will the onlineCourse object log? 
 */
 
-// interface Product {
-//   name: string;
-// }
+export {}
 
-// interface Product {
-//   isPublished: boolean;
-// }
+interface Product {
+  name: string
+}
 
-// let onlineCourse: Product = {
-//   name: "TS Bootcamp",
-//   isPublished: true,
-// };
+interface Product {
+  isPublished: boolean
+}
 
-// console.log(onlineCourse);
+let onlineCourse: Product = {
+  name: "TS Bootcamp",
+  isPublished: true,
+}
+
+console.log(onlineCourse)

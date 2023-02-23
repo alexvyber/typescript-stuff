@@ -49,6 +49,5 @@ class Veax extends Robot implements VeaxInterface {
   }
 }
 
-let avdonRobot = new Avdon(11254, "Avdon5000", "AN233", "Medium", 25)
-
-let veaxRobot = new Veax(25485, "Veaxcel9000", "VX255", "High", 75)
+const avdonRobot = new Avdon(11254, "Avdon5000", "AN233", "Medium", 25)
+const veaxRobot = new Veax(25485, "Veaxcel9000", "VX255", "High", 75)

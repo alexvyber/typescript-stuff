@@ -1,6 +1,7 @@
 {
   "name": "modules",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "author": "",
   "license": "ISC",
@@ -9,7 +10,8 @@
     "serve": "node node_modules/esmodules-dev-server"
   },
   "devDependencies": {
+    "@types/node": "^18.14.0",
     "esmodules-dev-server": "^0.0.4",
-    "typescript": "^4.9.4"
+    "typescript": "5.0.0-beta"
   }
 }

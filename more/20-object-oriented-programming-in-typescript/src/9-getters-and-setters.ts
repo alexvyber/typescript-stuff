@@ -1,28 +1,42 @@
-// class Robot {
-//   public durability?: string;
+export class Robot {
+  public durability?: string
 
-//   constructor(
-//     public readonly id: number,
-//     public readonly model: string,
-//     public name: string,
-//     private _sentient: boolean
-//   ) {}
+  #private = "asdfasdf"
 
-//   walk(): void {
-//     console.log("This robot can walk");
-//   }
+  constructor(
+    public readonly id: number,
+    public readonly model: string,
+    public name: string,
+    private _sentient: boolean,
+  ) {}
 
-//   get sentient(): boolean {
-//     return this._sentient;
-//   }
+  walk(): void {
+    console.log("This robot can walk")
+  }
 
-//   set sentient(sentient: boolean) {
-//     this._sentient = sentient;
-//   }
-// }
+  get sentient(): boolean {
+    return this._sentient
+  }
 
-// let robot = new Robot(1051, "EX69", "Avdon", true);
+  set sentient(sentient: boolean) {
+    this._sentient = sentient
+  }
 
-// console.log(robot.sentient);
-// robot.sentient = false;
-// console.log(robot.sentient);
+  get private(): string {
+    return this.#private
+  }
+
+  set private(arg: string) {
+    this.#private = arg
+  }
+}
+
+let robot = new Robot(1051, "EX69", "Avdon", true)
+
+console.log(robot.sentient)
+robot.sentient = false
+console.log(robot.sentient)
+
+console.log("🚀 ~ robot.private:", robot.private)
+robot.private = "qwerqwer"
+console.log("🚀 ~ robot.private:", robot.private)
