@@ -1,0 +1,3 @@
+[submodule "ts-module-resolution-examples"]
+	path = ts-module-resolution-examples
+	url = https://github.com/IanVS/ts-module-resolution-examples.git

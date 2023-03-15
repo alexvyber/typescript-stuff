@@ -1,0 +1,10 @@
+{
+  "name": "ts-module-resolution-example-node",
+  "version": "1.0.0",
+  "description": "Examples of TypeScript module resolution",
+  "author": "Ian VanSchooten",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
+}
