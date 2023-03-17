@@ -3,5 +3,8 @@
     "build-cjs": "tsc -p tsconfig-cjs.json",
     "build-esm": "tsc -p tsconfig-esm.json",
     "build-extensionless": "tsc -p tsconfig-extensionless.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
   }
 }

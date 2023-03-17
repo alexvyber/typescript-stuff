@@ -1,9 +1,9 @@
-import {value} from 'pkg';
+import { value } from "pkg"
 
 export function Static() {
- return value;
+  return value
 }
 
 export async function Dynamic() {
-  return (await import("pkg")).value;
+  return (await import("pkg")).value
 }
