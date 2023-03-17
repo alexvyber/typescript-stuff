@@ -2,5 +2,8 @@
   "scripts": {
     "build": "npx tsc -p tsconfig.json",
     "build-allowjs": "npx tsc -p tsconfig-allowjs.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
   }
 }

@@ -2,5 +2,8 @@
   "scripts": {
     "build1": "npx tsc -p tsconfig1.json",
     "build2": "npx tsc -p tsconfig2.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
   }
 }

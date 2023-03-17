@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "target": "ES2021"
+  },
   "extends": "../tsconfig.json",
   "include": ["example.ts"]
 }

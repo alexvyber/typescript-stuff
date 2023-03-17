@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
+    "target": "ES2021",
     "moduleResolution": "node",
     "declaration": true,
     "emitDeclarationOnly": true,
     "traceResolution": true
-  },
+  }
 }
