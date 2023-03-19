@@ -11,7 +11,7 @@ const shapes = {
 
 type Shape = keyof typeof shapes
 
-function resolveShape<T extends Shape>(shape: T): typeof shapes[T] {
+function resolveShape<T extends Shape>(shape: T): (typeof shapes)[T] {
   return shapes.square as any
 }
 
