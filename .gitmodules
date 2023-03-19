@@ -1,3 +1,6 @@
 [submodule "ts-module-resolution-examples"]
 	path = ts-module-resolution-examples
 	url = https://github.com/IanVS/ts-module-resolution-examples.git
+[submodule "mattpocock-stuff"]
+	path = mattpocock-stuff
+	url = https://github.com/alexvyber/mattpocock-stuff.git
