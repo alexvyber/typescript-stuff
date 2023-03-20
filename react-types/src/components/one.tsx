@@ -124,8 +124,12 @@ export const Parent = () => (
     <Four>ASDASDASDASDASD</Four>
     <Five />
 
-    {/* {React.createElement(One)} */}
+    {React.createElement(One, {}, [
+      <h2 key={Math.random()}>AAAAAAAAAAAAAAAAAAAA</h2>,
+      <h2 key={Math.random()}>AAAAAAAAAAAAAAAAAAAA</h2>,
+      <h2 key={Math.random()}>AAAAAAAAAAAAAAAAAAAA</h2>
+    ])}
     {/* {React.createElement("div", {}, [ReactNodeDiv])} */}
-    <div>{[ReactNodeDivObj]}</div>
+    {/* <div>{[ReactNodeDivObj]}</div> */}
   </div>
 )
