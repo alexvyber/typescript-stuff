@@ -4,7 +4,7 @@ const AuthMethod = {
   google: "google"
 } as const
 
-type AuthMethod = (typeof AuthMethod)[keyof typeof AuthMethod]
+type AuthMethod = typeof AuthMethod[keyof typeof AuthMethod]
 
 const doThing = (authMethod: AuthMethod) => {}
 
@@ -30,3 +30,12 @@ type LogLevel = keyof typeof LOG_LEVEL
 const log = (msg: string, level: LogLevel) => {
   console.log(`${LOG_LEVEL[level]}: ${msg}`)
 }
+
+// -- enumsAsTypes: true
+export type PublicationState = "LIVE" | "PREVIEW"
+
+// -- ???
+export const publicationState = {
+  live: "LIVE",
+  preview: "PREVIEW"
+} as const
