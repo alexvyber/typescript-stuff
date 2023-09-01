@@ -1,0 +1,23 @@
+.semibold {
+  font-weight: 600;
+}
+
+.info {
+  font-weight: 600; /* font-semibold */
+}
+
+.color-input {
+  border-width: 2px;
+  border-color: #1e293b; /* slate-900 */
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+.color-input:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* hover:shadow-xl */
+}
+
+.w-100 {
+  width: 100%;
+}

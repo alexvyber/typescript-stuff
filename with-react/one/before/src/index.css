@@ -1,0 +1,152 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5rem; /* Increased font size */
+  line-height: 1.2; /* Slightly increased line height */
+}
+
+h2 {
+  font-size: 2rem; /* Increased font size */
+}
+
+h3 {
+  font-size: 1.75rem; /* Increased font size */
+}
+
+h4 {
+  font-size: 1.5rem; /* Increased font size */
+}
+
+h5 {
+  font-size: 1.25rem; /* Increased font size */
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p,
+ul,
+ol,
+dl {
+  line-height: 1.6; /* Slightly increased line height */
+}
+
+input {
+  border-radius: 0.25rem; /* Slightly decreased border radius */
+  border: 2px solid #5b21b6;
+  background-color: #f3ebfe;
+  padding: 0.5rem;
+  color: #553c9a;
+  placeholder-color: #c084fc;
+  accent-color: #805ad5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Increased shadow strength */
+  transition: all 0.2s ease-in;
+}
+
+button,
+button[type="button"],
+button[type="reset"],
+button[type="submit"] input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5b21b6;
+  background-color: #f3ebfe;
+  padding: 0.75rem 1rem;
+  transition: background-color 0.2s ease-in;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+  accent-color: #805ad5;
+}
+
+input[type="range"] {
+  height: 2px;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 0.25rem;
+  background-color: #f3ebfe;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  background-color: #6b21b6;
+  font-weight: 600;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+
+input[type="color"] {
+  height: 3rem;
+  padding: 0.25rem;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  placeholder-color: #ff5252;
+  accent-color: #ff0d0d;
+}
+
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="time"] {
+  color: #553c9a;
+}
+
+label {
+  font-weight: normal;
+}
+
+input:checked + label {
+  padding-left: 0.5rem;
+  font-weight: 600;
+  color: #553c9a;
+  transition: color 0.2s;
+}
+
+select {
+  display: block;
+  width: 100%;
+  border: 2px solid #5b21b6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  padding-right: 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Increased shadow strength */
+  transition: all 0.2s ease-in;
+}

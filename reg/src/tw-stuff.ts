@@ -283,7 +283,7 @@ function getVariants<T extends ConfigSchema, U extends ConfigSchema>(
     Object.entries(newVariants) as Array<
       [
         vartiant: keyof typeof newVariants,
-        value: typeof newVariants[keyof typeof newVariants]
+        value: (typeof newVariants)[keyof typeof newVariants]
       ]
     >
   ).map(([variant, value]) =>

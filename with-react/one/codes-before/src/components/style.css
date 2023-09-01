@@ -1,0 +1,28 @@
+/* Styles for the container div */
+.relative-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #1d4ed8;
+}
+
+/* Styles for the absolute section */
+.absolute-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #9ae6ff;
+  padding: 16px;
+  text-align: left;
+  font-size: larger;
+}
+
+/* Styles for the bold span */
+.bold-span {
+  font-weight: bold;
+}
+
+/* Styles for the paragraph */
+.paragraph {
+  margin: 0;
+}

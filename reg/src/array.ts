@@ -7,7 +7,7 @@ const Obj = {
 
 ;(
   Object.entries(Obj) as Array<
-    [key: keyof typeof Obj, value: typeof Obj[keyof typeof Obj]]
+    [key: keyof typeof Obj, value: (typeof Obj)[keyof typeof Obj]]
   >
 ).map(([key, value]) => {})
 
@@ -19,10 +19,10 @@ const filteredFriends = friends.filter(Boolean)
 filteredFriends // ["Ben", "Alex", "Lynn"]
 
 const filteredFriendsAsserted = friends.filter(
-  (item): item is NonNullable<typeof friends[number]> => Boolean(item)
+  (item): item is NonNullable<(typeof friends)[number]> => Boolean(item)
 )
 
 filteredFriendsAsserted
-type Type = typeof filteredFriendsAsserted[number]
+type Type = (typeof filteredFriendsAsserted)[number]
 //   ^?
 const str: Type = "Alex"

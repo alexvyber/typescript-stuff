@@ -1,0 +1,26 @@
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* CSS for the loader div */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value to fit your desired height */
+}
+
+.loader p {
+  font-size: 34px; /* Adjust this value to set the font size */
+  color: crimson;
+  font-weight: bold;
+  animation: pulse 1s infinite; /* Use the 'pulse' keyframes for animation */
+}

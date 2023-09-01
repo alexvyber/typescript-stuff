@@ -55,7 +55,7 @@ function Outer(obj: { [key: string]: any }) {
   function Inner() {}
   Inner.prototype = obj
   // @ts-ignore
-  return new Inner as any
+  return new Inner() as any
 }
 
 const some = Outer(asdf)

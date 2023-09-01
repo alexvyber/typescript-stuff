@@ -1,0 +1,53 @@
+.book-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-form-label {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-bottom: 15px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.book-input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.book-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.book-button:hover {
+  background-color: #2563eb;
+}
+
+.book-button:active {
+  background-color: #1a4bbb;
+}

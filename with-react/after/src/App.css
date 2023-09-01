@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem; /* 8 */
+  padding: 2rem; /* 8 */
+  padding-bottom: 10rem; /* 40 */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00666a; /* dark:bg-slate-900 */
+  color: white; /* dark:text-white */
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* sm:grid-cols-2 */
+  }
+}
