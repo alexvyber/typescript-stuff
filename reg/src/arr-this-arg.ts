@@ -7,3 +7,8 @@ arr.map(function (this: typeof some, value, index, arr) {
 }, some)
 
 export {}
+// Print
+// some
+// some
+// some
+
