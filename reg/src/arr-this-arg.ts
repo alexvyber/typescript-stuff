@@ -6,8 +6,9 @@ arr.map(function (this: typeof some, value, index, arr) {
   this.print();
 }, some);
 
-export {};
+export {}
 // Print
 // some
 // some
 // some
+
