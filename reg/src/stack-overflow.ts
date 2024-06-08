@@ -1,10 +1,10 @@
-export {}
+export {};
 
-let i = 0
+let i = 0;
 
 function one() {
-  console.log(i++)
-  one()
+  console.log(i++);
+  one();
 }
 
-one()
+one();

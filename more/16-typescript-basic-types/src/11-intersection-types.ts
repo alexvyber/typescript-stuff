@@ -1,32 +1,28 @@
 type ProductProperties = {
-  id: number
-  category: string
-  name: string
-  price: number
-  stock: number
-}
+  id: number;
+  category: string;
+  name: string;
+  price: number;
+  stock: number;
+};
 
 type ProductDiscounts = {
-  discounts(): void
-}
+  discounts(): void;
+};
 
 type ProductSeasonalSales = {
-  holidaySales(): void
-}
+  holidaySales(): void;
+};
 
 type ProductSubscription = {
-  subscription(): void
-}
+  subscription(): void;
+};
 
 type ProductShipping = {
-  shipping(): void
-}
+  shipping(): void;
+};
 
-type Product = ProductProperties &
-  ProductDiscounts &
-  ProductSeasonalSales &
-  ProductSubscription &
-  ProductShipping
+type Product = ProductProperties & ProductDiscounts & ProductSeasonalSales & ProductSubscription & ProductShipping;
 
 const alanWrench: Product = {
   id: 1,
@@ -39,7 +35,7 @@ const alanWrench: Product = {
   holidaySales: () => {},
   subscription: () => {},
   shipping: () => {},
-}
+};
 
 const tapeMeasure: Product = {
   id: 2,
@@ -52,7 +48,7 @@ const tapeMeasure: Product = {
   holidaySales: () => {},
   subscription: () => {},
   shipping: () => {},
-}
+};
 
-console.log(alanWrench)
-console.log(tapeMeasure)
+console.log(alanWrench);
+console.log(tapeMeasure);

@@ -1,4 +1,4 @@
 // Challenge 2
-let myArr: Array<boolean> = [true, false]
+let myArr: Array<boolean> = [true, false];
 
-export {}
+export {};

@@ -6,8 +6,8 @@ function myFunc(arg: number | undefined): number {
   //   return arg
   // }
 
-  return arg || 1
+  return arg || 1;
 }
 
-console.log(myFunc(10))
-console.log(myFunc(undefined))
+console.log(myFunc(10));
+console.log(myFunc(undefined));

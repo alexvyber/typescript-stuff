@@ -7,4 +7,4 @@ let searchHistory: string[] = [
   "benefits of eating garlic",
   "html css tutorial",
   "calisthenics",
-]
+];

@@ -1,8 +1,8 @@
 interface Employee {
-  readonly id: number
-  name: string
-  hobbies: string[]
-  employeeHobbies(): string[]
+  readonly id: number;
+  name: string;
+  hobbies: string[];
+  employeeHobbies(): string[];
 }
 
 function getEmployeeInfo(id: number, name: string, hobbies: string[]): Employee {
@@ -11,12 +11,12 @@ function getEmployeeInfo(id: number, name: string, hobbies: string[]): Employee 
     name,
     hobbies,
     employeeHobbies() {
-      return employee.hobbies
+      return employee.hobbies;
     },
-  }
+  };
 }
 
-let employee: Employee = getEmployeeInfo(1, "Glenn", ["Reading", "Walking"])
+let employee: Employee = getEmployeeInfo(1, "Glenn", ["Reading", "Walking"]);
 
-console.log(employee)
-console.log(employee.employeeHobbies())
+console.log(employee);
+console.log(employee.employeeHobbies());

@@ -3,28 +3,28 @@ What will the function invocation result in?
 */
 
 type SucceededAPICall = {
-  response: "success"
-  value: number
-}
+  response: "success";
+  value: number;
+};
 
 type FailedAPICall = {
-  response: "failure"
-  reason: string
-}
+  response: "failure";
+  reason: string;
+};
 
-type APICall = SucceededAPICall | FailedAPICall
+type APICall = SucceededAPICall | FailedAPICall;
 
 function APICallStatus(s: string): APICall {
-  const n: number = Number(s)
+  const n: number = Number(s);
 
   if (Number.isNaN(n))
     return {
       response: "failure",
       reason: "string cannot be converted into a number",
-    }
+    };
 
-  return { response: "success", value: n }
+  return { response: "success", value: n };
 }
 
-console.log(APICallStatus("hey"))
-console.log(APICallStatus("10"))
+console.log(APICallStatus("hey"));
+console.log(APICallStatus("10"));

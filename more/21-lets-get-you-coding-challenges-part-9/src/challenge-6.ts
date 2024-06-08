@@ -2,19 +2,19 @@
 What will the onlineCourse object log? 
 */
 
-export {}
+export {};
 
 interface Product {
-  name: string
+  name: string;
 }
 
 interface Product {
-  isPublished: boolean
+  isPublished: boolean;
 }
 
 let onlineCourse: Product = {
   name: "TS Bootcamp",
   isPublished: true,
-}
+};
 
-console.log(onlineCourse)
+console.log(onlineCourse);

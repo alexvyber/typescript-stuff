@@ -1,14 +1,14 @@
-const one = new Promise<string>(resolve => {
-  resolve("text")
-})
+const one = new Promise<string>((resolve) => {
+  resolve("text");
+});
 
-let oneRes: string
+let oneRes: string;
 
-one.then(value => {
+one.then((value) => {
   setTimeout(() => {
-    oneRes = value
-  }, 1000)
-})
+    oneRes = value;
+  }, 1000);
+});
 
-console.log("🚀 ~ one ~ one", await one)
-console.log("🚀 ~ oneRes ~ oneRes", oneRes)
+console.log("🚀 ~ one ~ one", await one);
+console.log("🚀 ~ oneRes ~ oneRes", oneRes);

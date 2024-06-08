@@ -1,18 +1,18 @@
-export {}
+export {};
 
 type Employee = {
-  readonly id: number
-  name: string
-  hobbies: string[]
-}
+  readonly id: number;
+  name: string;
+  hobbies: string[];
+};
 
-type name = string
-type price = number
+type name = string;
+type price = number;
 
 interface Employee {
-  readonly id: number
-  name: string
-  hobbies: string[]
+  readonly id: number;
+  name: string;
+  hobbies: string[];
 }
 
 function getEmployeeInfo(id: number, name: string, hobbies: string[]): Employee {
@@ -20,9 +20,9 @@ function getEmployeeInfo(id: number, name: string, hobbies: string[]): Employee 
     id: id,
     name: name,
     hobbies: hobbies,
-  }
+  };
 }
 
-let employee: Employee = getEmployeeInfo(1, "Glenn", ["Reading", "Walking"])
+let employee: Employee = getEmployeeInfo(1, "Glenn", ["Reading", "Walking"]);
 
-console.log(employee)
+console.log(employee);

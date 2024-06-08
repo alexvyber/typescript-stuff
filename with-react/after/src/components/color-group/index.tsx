@@ -1,8 +1,5 @@
 // Importing utility functions to get related colors from the specified color.
-import {
-  getComplementColors,
-  getTriadColors,
-} from "../utils/get-related-colors";
+import { getComplementColors, getTriadColors } from "../utils/get-related-colors";
 
 // Importing the component to display the related color palettes.
 import ColorGroupPalette from "./related-color-palette";

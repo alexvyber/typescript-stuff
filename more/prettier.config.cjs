@@ -7,4 +7,4 @@ module.exports = {
   bracketSameLine: true,
   ...require("@theguild/prettier-config"),
   singleQuote: false,
-}
+};

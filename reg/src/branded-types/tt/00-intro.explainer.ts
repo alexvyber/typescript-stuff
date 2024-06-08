@@ -1,3 +1,3 @@
 // Matt explains the course
 
-export {}
+export {};

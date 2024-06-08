@@ -15,7 +15,7 @@ const containerStyle: React.CSSProperties = {
 
 type SetColorsProps = {
   hexColor: string;
-  dispatch: Dispatch<ColorActions>
+  dispatch: Dispatch<ColorActions>;
 };
 
 const SetColors = ({ hexColor, dispatch }: SetColorsProps) => {
@@ -24,7 +24,7 @@ const SetColors = ({ hexColor, dispatch }: SetColorsProps) => {
       {/* Display the title */}
       <h3>Set Colors</h3>
       {/* Display the HexToRGB component */}
-      <HexToRGB hexColor={hexColor} dispatch={dispatch}/>
+      <HexToRGB hexColor={hexColor} dispatch={dispatch} />
       {/* Display the HexToHSL component */}
       <HexToHSL hexColor={hexColor} />
       {/* Display the HexToHSV component */}

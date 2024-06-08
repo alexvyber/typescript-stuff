@@ -1,18 +1,18 @@
 const timer = setTimeout(() => {
-  console.log("one") // macro
-}, 0)
+  console.log("one"); // macro
+}, 0);
 
 setTimeout(() => {
-  console.log("four")
-}, 0)
+  console.log("four");
+}, 0);
 
-Promise.resolve("three").then(v => {
-  console.log(v)
-}) // micro
+Promise.resolve("three").then((v) => {
+  console.log(v);
+}); // micro
 
-console.log("timer ID: " + timer)
+console.log("timer ID: " + timer);
 
-console.log("two")
+console.log("two");
 
 // timer
 // two

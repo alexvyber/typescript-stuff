@@ -1,24 +1,24 @@
-export {}
+export {};
 
 const a = {
   msg: "hello",
   list: ["apple", "oranage", "banana"],
   test() {
-    console.log("TEST FUNC")
+    console.log("TEST FUNC");
   },
-  empty: null
-}
+  empty: null,
+};
 
-console.log("🚀 ~ a", a)
+console.log("🚀 ~ a", a);
 
-let b = Object.assign({}, a)
+let b = Object.assign({}, a);
 
-b.list.push("milk")
-console.log("🚀 ~ a", a)
+b.list.push("milk");
+console.log("🚀 ~ a", a);
 
-b.msg = "hi"
+b.msg = "hi";
 b.test = function SomeNameHERE() {
-  console.log("new method")
-}
+  console.log("new method");
+};
 
-console.log("🚀 ~ b", b)
+console.log("🚀 ~ b", b);

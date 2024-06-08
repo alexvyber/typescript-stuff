@@ -1,13 +1,13 @@
-export {}
+export {};
 
 interface Product {
-  name: string
-  price: number
+  name: string;
+  price: number;
 }
 
 interface Product {
-  rating: number
-  sales: number
+  rating: number;
+  sales: number;
 }
 
 const course: Product = {
@@ -15,18 +15,18 @@ const course: Product = {
   price: 10.99,
   rating: 4.6,
   sales: 1111,
-}
+};
 
 interface Product {
-  name: string
-  price: number
+  name: string;
+  price: number;
 }
 
 interface Product {
   // price: string
 
-  rating: number
-  sales: number
+  rating: number;
+  sales: number;
 }
 
 const course_: Product = {
@@ -34,11 +34,11 @@ const course_: Product = {
   price: 10.99,
   rating: 4.6,
   sales: 1111,
-}
+};
 
 interface Product {
-  name: string
-  price: number
+  name: string;
+  price: number;
 }
 
 const course__: Product = {
@@ -46,9 +46,9 @@ const course__: Product = {
   price: 10.99,
   rating: 4.6,
   sales: 1111,
-}
+};
 
 interface Product {
-  rating: number
-  sales: number
+  rating: number;
+  sales: number;
 }

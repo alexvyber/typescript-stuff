@@ -9,31 +9,31 @@ const data = {
       three: {
         four: {
           str: "some",
-          num: 1
-        }
-      }
-    }
-  }
-}
+          num: 1,
+        },
+      },
+    },
+  },
+};
 
-const { one } = data
+const { one } = data;
 
 const {
-  one: { two }
-}: Partial<typeof data> = data
+  one: { two },
+}: Partial<typeof data> = data;
 
 const {
   one: {
-    two: { three }
-  }
-} = data
+    two: { three },
+  },
+} = data;
 
 const {
   one: {
     two: {
       three: {
-        four: { str: strAliast }
-      }
-    }
-  }
-} = data
+        four: { str: strAliast },
+      },
+    },
+  },
+} = data;

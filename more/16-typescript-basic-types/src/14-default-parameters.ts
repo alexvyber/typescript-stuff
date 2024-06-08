@@ -1,12 +1,12 @@
-export {}
+export {};
 
-let productName: (product: string, price?: number) => string
+let productName: (product: string, price?: number) => string;
 
 productName = (product = "some", price = 10.99) => {
-  return `${product}, ${price}`
-}
+  return `${product}, ${price}`;
+};
 
-console.log(productName("TS Bootcamp"))
-console.log(productName("TS Bootcamp", 9.99))
+console.log(productName("TS Bootcamp"));
+console.log(productName("TS Bootcamp", 9.99));
 
-productName("123", 123)
+productName("123", 123);

@@ -1,1 +1,1 @@
-export const value = 'target-cjs' as const;
+export const value = "target-cjs" as const;

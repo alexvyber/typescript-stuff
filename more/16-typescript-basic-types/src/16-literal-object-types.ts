@@ -1,17 +1,17 @@
-type Student = { fullName: string }
+type Student = { fullName: string };
 
 function studentDB(student: { fullName: string }): string {
-  return student.fullName
+  return student.fullName;
 }
 
 function studentDB1({ fullName }: { fullName: string }): string {
-  return fullName
+  return fullName;
 }
 
-const student = { fullName: "Mark Smith" }
+const student = { fullName: "Mark Smith" };
 
-console.log(studentDB({ fullName: "Mark Smith" }))
-console.log(studentDB({ fullName: "Jane williams" }))
+console.log(studentDB({ fullName: "Mark Smith" }));
+console.log(studentDB({ fullName: "Jane williams" }));
 
-console.log(studentDB1({ fullName: "Mark Smith" }))
-console.log(studentDB1({ fullName: "Jane williams" }))
+console.log(studentDB1({ fullName: "Mark Smith" }));
+console.log(studentDB1({ fullName: "Jane williams" }));

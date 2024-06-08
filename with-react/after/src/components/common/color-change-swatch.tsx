@@ -9,12 +9,7 @@ type ColorChangeSwatchProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
-const ColorChangeSwatch = ({
-  hexColor,
-  colorName,
-  className,
-  onClick,
-}: ColorChangeSwatchProps) => {
+const ColorChangeSwatch = ({ hexColor, colorName, className, onClick }: ColorChangeSwatchProps) => {
   return (
     <Button
       className={clsx("color-input", className)} // Concatenate class names using clsx

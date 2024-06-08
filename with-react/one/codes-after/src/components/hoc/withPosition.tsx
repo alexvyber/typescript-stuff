@@ -2,7 +2,6 @@ import { MouseEventHandler, useCallback, useState } from "react";
 import { getPosition } from "../get-pos";
 import { DisplayMousePositionProps } from "./displayMousePosition";
 
-
 const initialState = { x: 0, y: 0 };
 
 const withMouseMove =
@@ -18,9 +17,7 @@ const withMouseMove =
       [setPosition]
     );
 
-    return (
-      <Component {...(props as T)} x={x} y={y} onMouseMove={updatePosition} />
-    );
+    return <Component {...(props as T)} x={x} y={y} onMouseMove={updatePosition} />;
   };
 
 export default withMouseMove;

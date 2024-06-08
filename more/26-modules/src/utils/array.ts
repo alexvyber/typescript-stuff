@@ -1,1 +1,1 @@
-export const productsList = ["TS", "JS", "Python"]
+export const productsList = ["TS", "JS", "Python"];

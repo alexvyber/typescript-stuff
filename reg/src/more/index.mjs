@@ -1,3 +1,3 @@
-import { toString } from "./some.mjs"
+import { toString } from "./some.mjs";
 
-toString(12)
+toString(12);

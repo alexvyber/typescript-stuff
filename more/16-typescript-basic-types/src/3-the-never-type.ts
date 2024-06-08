@@ -4,6 +4,6 @@ function chatFeed(): never {
   }
 }
 
-chatFeed()
+chatFeed();
 
-console.log("Chat Disconnected")
+console.log("Chat Disconnected");

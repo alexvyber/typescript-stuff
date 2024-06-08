@@ -1,9 +1,4 @@
-import {
-  Worker,
-  isMainThread,
-  parentPort,
-  workerData,
-} from "node:worker_threads";
+import { Worker, isMainThread, parentPort, workerData } from "node:worker_threads";
 // console.time("time");
 // let output: string = "";
 // for (let i = 0; i < 1000_000; i++) {

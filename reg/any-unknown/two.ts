@@ -1,21 +1,21 @@
-export {}
+export {};
 
-const keys = ["a", "b"]
+const keys = ["a", "b"];
 
-const obj = {}
+const obj = {};
 
 for (const key of keys) {
   // Element implicitly has an 'any' type because
   // expression of type 'string' can't be used to
   // index type '{}'.
-  obj[key] = key
+  obj[key] = key;
 }
 
-const keys_ = ["a", "b"]
+const keys_ = ["a", "b"];
 
 // Phew, no more error
-const obj_: any = {}
+const obj_: any = {};
 
 for (const key of keys) {
-  obj_[key] = key
+  obj_[key] = key;
 }

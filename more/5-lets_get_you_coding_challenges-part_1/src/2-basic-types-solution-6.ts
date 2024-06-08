@@ -1,2 +1,2 @@
 // Challenge 6
-let language: number = "TypeScript".length
+let language: number = "TypeScript".length;

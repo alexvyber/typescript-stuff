@@ -1,25 +1,25 @@
 // Challenge 13
 
 export class Product {
-  name: string
+  name: string;
 
   constructor(name: string) {
-    this.name = name
+    this.name = name;
   }
 
   holidaySales() {
-    return true
+    return true;
   }
 }
 
 interface ProductInfo extends Product {
-  price: number
+  price: number;
 }
 
 const product: ProductInfo = {
   name: "TS",
   holidaySales: () => true,
   price: 10.99,
-}
+};
 
-console.log(product)
+console.log(product);

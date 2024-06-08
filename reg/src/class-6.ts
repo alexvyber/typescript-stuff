@@ -1,34 +1,34 @@
-export {}
+export {};
 
 class CarBasics {
-  brand: string
-  model: string
+  brand: string;
+  model: string;
   constructor() {
-    this.brand = "Toyota"
-    this.model = "Camry"
+    this.brand = "Toyota";
+    this.model = "Camry";
   }
 }
 
 function PetrolEngine(cls: typeof CarBasics) {
   return class extends cls {
-    engine: string
+    engine: string;
 
     constructor() {
-      super()
-      this.engine = "Petrol"
+      super();
+      this.engine = "Petrol";
     }
-  }
+  };
 }
 
 function AutomaticGearbox(cls: ReturnType<typeof PetrolEngine>) {
   return class extends cls {
-    gearbox: string
+    gearbox: string;
 
     constructor() {
-      super()
-      this.gearbox = "Automatic"
+      super();
+      this.gearbox = "Automatic";
     }
-  }
+  };
 }
 
 // function Hybrid_engine() {
@@ -40,8 +40,8 @@ function AutomaticGearbox(cls: ReturnType<typeof PetrolEngine>) {
 // }
 
 // target obj: brand, model, engine, gearbox
-const ResultClass = AutomaticGearbox(PetrolEngine(CarBasics))
-let car = new ResultClass()
+const ResultClass = AutomaticGearbox(PetrolEngine(CarBasics));
+let car = new ResultClass();
 
-console.log("🚀 ~ car", car)
-console.log("🚀 ~ car.brand", car.brand)
+console.log("🚀 ~ car", car);
+console.log("🚀 ~ car.brand", car.brand);

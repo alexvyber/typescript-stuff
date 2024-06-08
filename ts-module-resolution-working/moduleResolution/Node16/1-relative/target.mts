@@ -1,1 +1,1 @@
-export const value = 'target-esm' as const;
+export const value = "target-esm" as const;

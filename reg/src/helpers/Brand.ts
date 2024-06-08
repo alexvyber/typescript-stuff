@@ -1,3 +1,3 @@
-declare const brand: unique symbol
+declare const brand: unique symbol;
 
-export type Brand<T, TBrand> = T & { [brand]: TBrand }
+export type Brand<T, TBrand> = T & { [brand]: TBrand };

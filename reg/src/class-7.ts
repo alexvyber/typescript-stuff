@@ -1,13 +1,13 @@
 export class SDK {
-  loggedInUser?: User
+  loggedInUser?: User;
 
   constructor(loggedInUser?: User) {
-    this.loggedInUser = loggedInUser
+    this.loggedInUser = loggedInUser;
   }
 
   assertIsLoggedIn(): asserts this is this & { loggedInUser: User } {
     if (!this.loggedInUser) {
-      throw new Error("Not logged in")
+      throw new Error("Not logged in");
     }
   }
 }

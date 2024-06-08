@@ -16,11 +16,7 @@ type ColorSelectProps = {
 };
 
 // The ColorSelect component allows the user to select a color using an input type="color"
-const ColorSelect = ({
-  hexColor,
-  label = "Color",
-  onChange,
-}: ColorSelectProps) => {
+const ColorSelect = ({ hexColor, label = "Color", onChange }: ColorSelectProps) => {
   return (
     <div style={containerStyle}>
       {/* LabeledInput component to display the selected color */}

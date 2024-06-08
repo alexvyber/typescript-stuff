@@ -20,19 +20,16 @@ export const initState: ColorState = {
   hexColor: "#c2025e",
 };
 
-export type ColorActions = UpdateHexAction | UpdateRGBAction
+export type ColorActions = UpdateHexAction | UpdateRGBAction;
 
-export const colorReducer = (
-  state: ColorState = initState,
-  action: ColorActions
-) => {
+export const colorReducer = (state: ColorState = initState, action: ColorActions) => {
   if (action.type === "update-hex") {
     const { hexColor } = action.payload;
     return { ...state, hexColor };
   }
 
   if (action.type === "update-rgb") {
-    const hexColor = '#' + rgb.hex(action.payload.rgb);
+    const hexColor = "#" + rgb.hex(action.payload.rgb);
     return { ...state, hexColor };
   }
 

@@ -1,14 +1,14 @@
-import pkg = require("pkg")
-import { value } from "pkg"
+import pkg = require("pkg");
+import { value } from "pkg";
 
 export async function Static() {
-  return value
+  return value;
 }
 
 export async function Dynamic() {
-  return pkg.value
+  return pkg.value;
 }
 
 export async function BadCJSDynamic() {
-  return (await import("pkg")).value
+  return (await import("pkg")).value;
 }

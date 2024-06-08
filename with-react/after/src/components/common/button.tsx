@@ -11,14 +11,7 @@ type ButtonProps = {
 };
 
 // The Button component represents a customizable button element
-const Button = ({
-  variant,
-  size,
-  className,
-  style,
-  children,
-  onClick,
-}: PropsWithChildren<ButtonProps>) => {
+const Button = ({ variant, size, className, style, children, onClick }: PropsWithChildren<ButtonProps>) => {
   return (
     <button
       className={clsx(variant, size, className)} // Concatenate class names using clsx

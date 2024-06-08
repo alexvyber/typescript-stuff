@@ -1,2 +1,2 @@
 // Challenge 1
-let score: number = 19
+let score: number = 19;

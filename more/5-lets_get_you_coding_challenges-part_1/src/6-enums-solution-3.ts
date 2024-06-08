@@ -4,4 +4,4 @@ enum FavoriteProduct {
   Id = ProductIds.Laptop,
 }
 
-console.log(`My favorite product is ${FavoriteProduct.Name} with an id of ${FavoriteProduct.Id}`)
+console.log(`My favorite product is ${FavoriteProduct.Name} with an id of ${FavoriteProduct.Id}`);

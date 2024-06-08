@@ -1,41 +1,41 @@
 export class Robot {
-  #superPrivate = "Some Private Stuff"
+  #superPrivate = "Some Private Stuff";
 
   constructor(
     public readonly id: number,
     public readonly model: string,
     public name: string,
-    private sentient: boolean,
+    private sentient: boolean
   ) {
-    this.id = id
-    this.model = model
-    this.name = name
-    this.sentient = sentient
+    this.id = id;
+    this.model = model;
+    this.name = name;
+    this.sentient = sentient;
   }
 
   walk(): void {
-    console.log("This robot can walk")
+    console.log("This robot can walk");
   }
 
   abilityTothink(): boolean {
-    return this.sentient
+    return this.sentient;
   }
 
   getPrivateStuff() {
-    return this.#superPrivate
+    return this.#superPrivate;
   }
 }
 
-let robot = new Robot(1051, "EX69", "Avdon", true)
+let robot = new Robot(1051, "EX69", "Avdon", true);
 
-console.log(robot)
-console.log(robot.abilityTothink())
+console.log(robot);
+console.log(robot.abilityTothink());
 
 // Property 'sentient' is private and only accessible within class 'Robot'.
 // robot.sentient
 
 // @ts-ignore
-console.log("🚀 ~ robot.sentient:", robot.sentient) // typecheck error
+console.log("🚀 ~ robot.sentient:", robot.sentient); // typecheck error
 
 // @ts-ignore
-console.log("🚀 ~ robot.#superPrivate:", robot.#superPrivate) // runtime error
+console.log("🚀 ~ robot.#superPrivate:", robot.#superPrivate); // runtime error

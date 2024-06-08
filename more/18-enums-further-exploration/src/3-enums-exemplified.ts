@@ -1,4 +1,4 @@
-export {}
+export {};
 
 enum GitRepo {
   NotCommitted,
@@ -6,9 +6,9 @@ enum GitRepo {
 }
 
 function isRepoCommitted(repo: GitRepo): boolean {
-  return repo === null || repo === GitRepo.Committed
+  return repo === null || repo === GitRepo.Committed;
 }
 
-let gitCommit = isRepoCommitted(GitRepo.Committed)
+let gitCommit = isRepoCommitted(GitRepo.Committed);
 
-console.log(gitCommit)
+console.log(gitCommit);

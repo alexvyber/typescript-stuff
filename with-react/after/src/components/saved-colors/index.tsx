@@ -29,11 +29,7 @@ const SavedColors = ({ hexColor }: SavedColorsProps) => {
       {/* Heading */}
       <h3>Save Your Color</h3>
       {/* AddSavedColor component to add new saved colors */}
-      <AddSavedColor
-        onSave={(name) =>
-          setSavedColors((colors) => [...colors, { id: id(), name, hexColor }])
-        }
-      />
+      <AddSavedColor onSave={(name) => setSavedColors((colors) => [...colors, { id: id(), name, hexColor }])} />
       {/* Mapping through savedColors and rendering SavedColor component for each */}
       {savedColors.map(({ id, name, hexColor }) => {
         return (
@@ -41,11 +37,7 @@ const SavedColors = ({ hexColor }: SavedColorsProps) => {
             key={id}
             name={name}
             hexColor={hexColor}
-            onRemove={() =>
-              setSavedColors((colors) =>
-                colors.filter((color) => color.id !== id)
-              )
-            }
+            onRemove={() => setSavedColors((colors) => colors.filter((color) => color.id !== id))}
           />
         );
       })}

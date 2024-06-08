@@ -1,2 +1,2 @@
 // Challenge 2
-let myName: string = "Muslim" + " " + "Helalee"
+let myName: string = "Muslim" + " " + "Helalee";

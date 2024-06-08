@@ -52,7 +52,7 @@ const enum StudentDetails {
   Major = "Arts",
 }
 
-let studentID: StudentDetails = StudentDetails.ID
-let studentName: StudentDetails = StudentDetails.Name
-let studentMajor: StudentDetails = StudentDetails.Major
-console.log(`${studentID}- ${studentName} has a major in ${studentMajor}`)
+let studentID: StudentDetails = StudentDetails.ID;
+let studentName: StudentDetails = StudentDetails.Name;
+let studentMajor: StudentDetails = StudentDetails.Major;
+console.log(`${studentID}- ${studentName} has a major in ${studentMajor}`);

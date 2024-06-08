@@ -1,4 +1,4 @@
-export {}
+export {};
 
 // function outer(str: string) {
 //   console.log("🚀 ~ outer ~ str", str)
@@ -9,8 +9,8 @@ export {}
 // outer("sssssssss")
 
 function some(one: any, two: any, three: any) {
-  console.log("🚀 ~ some ~ arguments", arguments)
-  console.log("🚀 ~ one,two,three", one, two, three)
+  console.log("🚀 ~ some ~ arguments", arguments);
+  console.log("🚀 ~ one,two,three", one, two, three);
 }
 
 // console.log("🚀 ~ some.length", some.length)
@@ -30,19 +30,19 @@ const obj = {
   str: "Some Random String",
   print() {
     setTimeout(() => {
-      console.log(this.str)
-    }, 1000)
+      console.log(this.str);
+    }, 1000);
   },
   printOld() {
     setTimeout(
       function () {
         // @ts-ignore
-        console.log("old " + this.str)
+        console.log("old " + this.str);
       }.bind(this),
       1000
-    )
-  }
-}
+    );
+  },
+};
 
-obj.print()
-obj.printOld()
+obj.print();
+obj.printOld();

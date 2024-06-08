@@ -26,14 +26,7 @@ type LabeledInputProps = {
   onChange?: ChangeEventHandler<HTMLInputElement>;
 };
 
-const LabeledInput = ({
-  label,
-  value,
-  id,
-  className,
-  type = "text",
-  onChange,
-}: LabeledInputProps) => {
+const LabeledInput = ({ label, value, id, className, type = "text", onChange }: LabeledInputProps) => {
   // Ensure unique ID using useId() hook
   id = useId() + id;
 

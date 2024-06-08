@@ -3,10 +3,10 @@ What will the function invocation result in?
 */
 
 function productId(): string | number {
-  return 112233
+  return 112233;
 }
 
-let id: number = productId()
-id
+let id: number = productId();
+id;
 
-export {}
+export {};

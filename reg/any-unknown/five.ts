@@ -1,16 +1,16 @@
-export {}
+export {};
 
 // How on earth do you type this function?
 
 const groupBy = (arr, key) => {
-  const result = {}
-  arr.forEach(item => {
-    const resultKey = item[key]
+  const result = {};
+  arr.forEach((item) => {
+    const resultKey = item[key];
     if (result[resultKey]) {
-      result[resultKey].push(item)
+      result[resultKey].push(item);
     } else {
-      result[resultKey] = [item]
+      result[resultKey] = [item];
     }
-  })
-  return result
-}
+  });
+  return result;
+};

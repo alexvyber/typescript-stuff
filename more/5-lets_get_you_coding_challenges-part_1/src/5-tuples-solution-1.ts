@@ -1,2 +1,2 @@
 // Challenge 1
-let myTuple1: [string] = ["TypeScript"]
+let myTuple1: [string] = ["TypeScript"];

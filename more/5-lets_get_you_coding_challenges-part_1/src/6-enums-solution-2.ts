@@ -5,4 +5,4 @@ enum ProductIds {
   Keyboard,
 }
 
-console.log(ProductIds)
+console.log(ProductIds);

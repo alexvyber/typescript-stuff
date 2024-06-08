@@ -1,22 +1,22 @@
-export {}
+export {};
 
 class Some {
-  one = "asdf"
-  two: string
+  one = "asdf";
+  two: string;
 
   constructor() {
-    this.two = "some shit " + Math.random()
+    this.two = "some shit " + Math.random();
   }
 
   getShit() {
-    return Math.random()
+    return Math.random();
   }
 }
 
 const asdf = [1, 2, 3, 4].map(function (this: Some, item, _index, _array) {
-  console.log(this.getShit() * 100)
+  console.log(this.getShit() * 100);
 
-  return { ["some" + Math.random()]: item * 10000 * Math.random() }
-}, new Some())
+  return { ["some" + Math.random()]: item * 10000 * Math.random() };
+}, new Some());
 
-console.log("🚀 ~ asdf", asdf)
+console.log("🚀 ~ asdf", asdf);

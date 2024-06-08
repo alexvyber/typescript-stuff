@@ -6,8 +6,8 @@ function myfunc(arg: string[] | undefined): number | undefined {
   //   return arg.length;
   // }
 
-  return arg && arg.length
+  return arg && arg.length;
 }
 
-console.log(myfunc(undefined))
-console.log(myfunc(["Hi", "Hey", "Hello", "There"]))
+console.log(myfunc(undefined));
+console.log(myfunc(["Hi", "Hey", "Hello", "There"]));

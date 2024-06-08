@@ -14,10 +14,7 @@ type RelatedColorPaletteProps = {
 };
 
 // The RelatedColorPalette component takes a title and an array of hexadecimal colors as input
-const RelatedColorPalette = ({
-  title,
-  hexColors,
-}: RelatedColorPaletteProps) => {
+const RelatedColorPalette = ({ title, hexColors }: RelatedColorPaletteProps) => {
   return (
     <section>
       {/* Displaying the title of the color palette */}

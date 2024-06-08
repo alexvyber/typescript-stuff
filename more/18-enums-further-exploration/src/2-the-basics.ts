@@ -16,4 +16,4 @@ enum Crops {
   Wheat,
 }
 
-console.log(Crops)
+console.log(Crops);

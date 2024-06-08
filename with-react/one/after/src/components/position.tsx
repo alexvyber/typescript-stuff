@@ -21,8 +21,7 @@ const MousePosition = () => {
   const [{ x, y }, dispatch] = useReducer(reducer, initialState);
 
   const updatePosition = useCallback<MouseEventHandler>(
-    (event) =>
-      dispatch({ type: "updatePosition", payload: getPosition(event) }),
+    (event) => dispatch({ type: "updatePosition", payload: getPosition(event) }),
     [dispatch]
   );
 

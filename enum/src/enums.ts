@@ -1,14 +1,14 @@
 enum AuthMethod {
   github = 0,
   email = 1,
-  google = 2
+  google = 2,
 }
 
-console.log(AuthMethod)
+console.log(AuthMethod);
 
-const doThing = (authMethod: AuthMethod) => {}
+const doThing = (authMethod: AuthMethod) => {};
 
-doThing(0x123) // no issue with this
+doThing(0x123); // no issue with this
 // doThing("123")
 
 // ~~
@@ -16,16 +16,16 @@ doThing(0x123) // no issue with this
 enum AuthMethodWithStrings {
   github = "github",
   email = "email",
-  google = "google"
+  google = "google",
 }
 
-console.log(AuthMethodWithStrings)
+console.log(AuthMethodWithStrings);
 
-const doOtherThing = (authMethod: AuthMethodWithStrings) => {}
+const doOtherThing = (authMethod: AuthMethodWithStrings) => {};
 
 // doOtherThing(123)
 // doOtherThing("sms")
 // doOtherThing(AuthMethodWithStrings.notInEnum)
-doOtherThing(AuthMethodWithStrings.github)
+doOtherThing(AuthMethodWithStrings.github);
 
-export {}
+export {};

@@ -3,6 +3,6 @@ Create a function that returns the length of a string array or undefined if the 
 */
 
 function returnLength(arr: string[] | undefined) {
-  if (!arr) return undefined
-  return arr.length
+  if (!arr) return undefined;
+  return arr.length;
 }

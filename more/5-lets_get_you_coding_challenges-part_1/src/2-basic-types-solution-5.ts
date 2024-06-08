@@ -1,2 +1,2 @@
 // Challenge 5
-let failed: boolean = 15
+let failed: boolean = 15;

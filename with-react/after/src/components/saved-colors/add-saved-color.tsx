@@ -25,11 +25,7 @@ const AddSavedColor = ({ onSave }: PropsWithChildren<AddSavedColorProps>) => {
       }}
     >
       {/* LabeledInput component for inputting saved color name */}
-      <LabeledInput
-        label="Give it a name"
-        value={savedColorName}
-        onChange={(e) => setSavedColorName(e.target.value)}
-      />
+      <LabeledInput label="Give it a name" value={savedColorName} onChange={(e) => setSavedColorName(e.target.value)} />
       {/* Button component to save the color */}
       <Button variant="primary" style={{ width: "50%" }}>
         Save

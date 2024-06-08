@@ -31,9 +31,7 @@ function App() {
   if (!book) return <Loader />;
 
   return (
-    <main className="w-full max-w-2xl py-16 mx-auto">
-      {/* <Book title={book.title} author={book.author} /> */}
-    </main>
+    <main className="w-full max-w-2xl py-16 mx-auto">{/* <Book title={book.title} author={book.author} /> */}</main>
   );
 }
 

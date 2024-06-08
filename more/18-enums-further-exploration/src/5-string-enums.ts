@@ -4,8 +4,8 @@ enum Employee {
 }
 
 function getEmployeeInfo(employee: Employee): Employee {
-  return employee
+  return employee;
 }
 
-console.log(getEmployeeInfo(Employee.Name))
-console.log(getEmployeeInfo(Employee.Job))
+console.log(getEmployeeInfo(Employee.Name));
+console.log(getEmployeeInfo(Employee.Job));

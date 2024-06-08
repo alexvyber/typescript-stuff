@@ -1,27 +1,27 @@
-import { Brand } from "../../helpers/Brand"
+import { Brand } from "../../helpers/Brand";
 
-type Password = Brand<string, "Password">
-type Email = Brand<string, "Email">
+type Password = Brand<string, "Password">;
+type Email = Brand<string, "Email">;
 
 type UserObject = Brand<
   {
-    id: string
-    name: string
+    id: string;
+    name: string;
   },
   "User"
->
+>;
 
 const user: UserObject = {
   id: "awdawd",
-  name: "awdawdawd"
-} as UserObject
+  name: "awdawdawd",
+} as UserObject;
 
-const verifyPassword = (password: Password) => {}
+const verifyPassword = (password: Password) => {};
 
-const password = "1231423" as Password
+const password = "1231423" as Password;
 
-const email = "mpocock@me.com" as Email
+const email = "mpocock@me.com" as Email;
 
-let passwordSlot: Password
+let passwordSlot: Password;
 
-passwordSlot = "awdjhawdjhbawd" as Password
+passwordSlot = "awdjhawdjhbawd" as Password;

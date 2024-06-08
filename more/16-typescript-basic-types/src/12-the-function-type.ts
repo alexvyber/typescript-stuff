@@ -1,14 +1,13 @@
-let productName: Function
+let productName: Function;
 
 productName = (product: string): string => {
-  return product
-}
+  return product;
+};
 
-export  let productName1: (arg: string) => string
+export let productName1: (arg: string) => string;
 
 productName = <T>(arg: T) => {
-  return arg
-}
+  return arg;
+};
 
-console.log(productName("TS Bootcamp"))
-
+console.log(productName("TS Bootcamp"));

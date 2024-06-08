@@ -1,18 +1,18 @@
-const names = ["Ben", "Alex", "Lynn", "Tyler"]
+const names = ["Ben", "Alex", "Lynn", "Tyler"];
 const mappedNames = names.map(
-  name =>
+  (name) =>
     (console.log(name) as undefined) || {
       name,
-      company: "uidotdev"
+      company: "uidotdev",
     }
-)
+);
 
 const mappedNames_ = names.map(
-  name => (
+  (name) => (
     console.log(name),
     {
       name,
-      company: "uidotdev"
+      company: "uidotdev",
     }
   )
-)
+);

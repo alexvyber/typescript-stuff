@@ -26,11 +26,7 @@ const SavedColor = ({ name, hexColor, onClick, onRemove }: SavedColorProps) => {
         Delete
       </Button>
       {/* ColorChangeSwatch component to display the saved color */}
-      <ColorChangeSwatch
-        hexColor={hexColor}
-        colorName={name}
-        onClick={onClick}
-      />
+      <ColorChangeSwatch hexColor={hexColor} colorName={name} onClick={onClick} />
     </article>
   );
 };

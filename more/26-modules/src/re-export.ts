@@ -1,1 +1,1 @@
-export { course as courseReExport } from "./ts-modules"
+export { course as courseReExport } from "./ts-modules";

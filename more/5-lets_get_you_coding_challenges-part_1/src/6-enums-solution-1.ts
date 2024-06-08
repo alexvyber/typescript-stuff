@@ -5,4 +5,4 @@ enum ProductNames {
   product3 = "Keyboard",
 }
 
-console.log(ProductNames)
+console.log(ProductNames);

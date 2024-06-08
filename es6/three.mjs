@@ -1,3 +1,3 @@
-console.log("three")
+console.log("three");
 
-export const some = () => console.log("From Three")
+export const some = () => console.log("From Three");

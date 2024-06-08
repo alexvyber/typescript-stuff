@@ -1,11 +1,8 @@
-const friends = ["Alex", "Ben", "Lynn"]
+const friends = ["Alex", "Ben", "Lynn"];
 
-console.log(
-  "🚀 ~ friends.hasOwnProperty('push'):",
-  friends.hasOwnProperty("push")
-) // false
+console.log("🚀 ~ friends.hasOwnProperty('push'):", friends.hasOwnProperty("push")); // false
 
-console.log("🚀 ~ Object.prototype:", Object.prototype)
+console.log("🚀 ~ Object.prototype:", Object.prototype);
 /*
    constructor: ƒ Object()
    hasOwnProperty: ƒ hasOwnProperty()
@@ -21,10 +18,7 @@ console.log("🚀 ~ Object.prototype:", Object.prototype)
   [Object: null prototype] {} - in node or deno
 */
 
-friends instanceof Array // true
-friends instanceof Object // true
+friends instanceof Array; // true
+friends instanceof Object; // true
 
-console.log(
-  "🚀 ~ friends.hasOwnProperty('push'):",
-  friends.hasOwnProperty("push")
-) // false
+console.log("🚀 ~ friends.hasOwnProperty('push'):", friends.hasOwnProperty("push")); // false

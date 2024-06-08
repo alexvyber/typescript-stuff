@@ -1,13 +1,13 @@
-"use strict"
-Object.defineProperty(exports, "__esModule", { value: true })
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 
-exports.moduleOne = void 0
+exports.moduleOne = void 0;
 
-var moduleOne
-;(function (moduleOne) {
+var moduleOne;
+(function (moduleOne) {
   function funcOne() {
-    return "some"
+    return "some";
   }
 
-  moduleOne.funcOne = funcOne
-})((moduleOne = exports.moduleOne || (exports.moduleOne = {})))
+  moduleOne.funcOne = funcOne;
+})((moduleOne = exports.moduleOne || (exports.moduleOne = {})));

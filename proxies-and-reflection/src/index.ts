@@ -1,22 +1,22 @@
-export {}
+export {};
 
 const obj = {
-  name: "Alice"
-}
+  name: "Alice",
+};
 
-const proxy = new Proxy(obj, {})
+const proxy = new Proxy(obj, {});
 
-proxy.name = "Maria"
+proxy.name = "Maria";
 
-console.log(obj)
+console.log(obj);
 
 const proxy2 = new Proxy(
   {},
   {
     get(target, p, receiver) {
-      console.log("get some stuff")
-    }
+      console.log("get some stuff");
+    },
   }
-)
+);
 
-proxy2.constructor
+proxy2.constructor;

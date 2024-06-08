@@ -3,17 +3,17 @@ What will the following function invocation print?
 */
 
 type Department = {
-  department: string
-}
+  department: string;
+};
 
 type Product = {
-  name: string
-}
+  name: string;
+};
 
-type ProductInfo = Department & Product
+type ProductInfo = Department & Product;
 
 function getProductInfo({ department }: ProductInfo): string {
-  return department
+  return department;
 }
 
-console.log(getProductInfo({ department: "Electronics", name: "M8" }))
+console.log(getProductInfo({ department: "Electronics", name: "M8" }));

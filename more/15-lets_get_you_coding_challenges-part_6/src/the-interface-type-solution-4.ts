@@ -1,13 +1,13 @@
 // Challenge 4
 
-export {}
+export {};
 
 type ProductName = {
-  name: string
-}
+  name: string;
+};
 
 interface ProductPrice extends ProductName {
-  price: number
+  price: number;
 }
 
-const product: ProductPrice = { name: " TS Bootcamp", price: 10.99 }
+const product: ProductPrice = { name: " TS Bootcamp", price: 10.99 };

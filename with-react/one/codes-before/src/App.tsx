@@ -15,9 +15,7 @@ const DisplayMousePos = ({ x, y }: { x: number; y: number }) => (
 function App() {
   return (
     <div className="container">
-      <RenderMousePosition>
-        {({ x, y }) => <DisplayMousePos x={x} y={y} />}
-      </RenderMousePosition>
+      <RenderMousePosition>{({ x, y }) => <DisplayMousePos x={x} y={y} />}</RenderMousePosition>
     </div>
   );
 }

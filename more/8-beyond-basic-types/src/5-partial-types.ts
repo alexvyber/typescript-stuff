@@ -1,21 +1,21 @@
-export {}
+export {};
 
 type Product = {
-  name?: string
-  price?: number
-}
+  name?: string;
+  price?: number;
+};
 
-let course: Product = { name: "TS" }
+let course: Product = { name: "TS" };
 
 //
 // Mapped Types
 
 type Product1 = {
-  name: string
-  price: number
-}
+  name: string;
+  price: number;
+};
 
-let course_: Partial<Product> = { name: "TS" }
+let course_: Partial<Product> = { name: "TS" };
 // course.name = "JS";
 
-let courseName_: string = course.name
+let courseName_: string = course.name;

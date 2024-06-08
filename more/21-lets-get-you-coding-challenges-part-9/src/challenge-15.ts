@@ -3,12 +3,12 @@ What will the course variable log?
 */
 
 export type Product = {
-  name: string
-}
+  name: string;
+};
 
 class TSCourse implements Product {
   constructor(public name: string) {}
 }
 
-let course = new TSCourse("TS Bootcamp")
-console.log(course)
+let course = new TSCourse("TS Bootcamp");
+console.log(course);

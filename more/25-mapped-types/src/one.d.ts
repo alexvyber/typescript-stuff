@@ -1,3 +1,3 @@
 declare global {
-  type PropKey = string | number
+  type PropKey = string | number;
 }

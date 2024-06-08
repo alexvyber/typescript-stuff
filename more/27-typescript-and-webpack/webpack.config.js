@@ -1,4 +1,4 @@
-const path = require("path")
+const path = require("path");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -26,4 +26,4 @@ module.exports = {
 
     port: 9090, // default 8000
   },
-}
+};

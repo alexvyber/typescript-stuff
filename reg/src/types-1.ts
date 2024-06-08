@@ -2,6 +2,6 @@
 
 // 👇 named export
 export type Some = {
-  one: string
-  two: number
-}
+  one: string;
+  two: number;
+};

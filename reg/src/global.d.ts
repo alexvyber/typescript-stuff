@@ -1,6 +1,6 @@
 declare global {
-  function myFunc(): boolean
-  var myVar: number
+  function myFunc(): boolean;
+  var myVar: number;
 }
-console.log(myVar)
-console.log(myFunc())
+console.log(myVar);
+console.log(myFunc());

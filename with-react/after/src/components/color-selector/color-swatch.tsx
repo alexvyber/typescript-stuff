@@ -27,9 +27,7 @@ type ColorSwatchProps = {
 const ColorSwatch = ({ hexColor }: ColorSwatchProps) => {
   return (
     <section style={containerStyle}>
-      <div style={{ ...contentStyle, backgroundColor: hexColor }}>
-        {hexColor}
-      </div>
+      <div style={{ ...contentStyle, backgroundColor: hexColor }}>{hexColor}</div>
     </section>
   );
 };

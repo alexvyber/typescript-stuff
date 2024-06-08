@@ -7,11 +7,7 @@ export type DisplayMousePositionProps = {
   onMouseMove: MouseEventHandler;
 };
 
-export const DisplayMousePosition = ({
-  x,
-  y,
-  onMouseMove,
-}: DisplayMousePositionProps) => {
+export const DisplayMousePosition = ({ x, y, onMouseMove }: DisplayMousePositionProps) => {
   return (
     <div className="relative-container" onMouseMove={onMouseMove}>
       <section className="absolute-section">

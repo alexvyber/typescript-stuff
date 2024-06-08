@@ -1,11 +1,11 @@
-export {}
+export {};
 
 const some = () => {
-  console.log("aaaaaaaaaaaaaaaaaaaaaa")
-  return "shit"
-}
+  console.log("aaaaaaaaaaaaaaaaaaaaaa");
+  return "shit";
+};
 
-void some()
-const more = void some()
+void some();
+const more = void some();
 
-console.log("🚀 ~ more", more)
+console.log("🚀 ~ more", more);

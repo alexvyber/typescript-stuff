@@ -1,4 +1,4 @@
 // Challenge 3
-let myArr: Array<Array<string>> = [["hey"], ["you", "good"]]
+let myArr: Array<Array<string>> = [["hey"], ["you", "good"]];
 
-export {}
+export {};

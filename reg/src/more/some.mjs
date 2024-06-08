@@ -3,5 +3,5 @@
  * @returns {string} `num`, converted to string
  */
 export function toString(num) {
-  return String(num)
+  return String(num);
 }
